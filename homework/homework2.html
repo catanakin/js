@@ -1,0 +1,157 @@
+<html>
+<head></head>
+<body>
+
+<script type="text/javascript">
+// задача №1
+/*
+Есть три вершины. Координаты X, Y, Z заданы как целые числа. 
+Нужно определить - является ли треугольник с заданными 
+координатами прямоугольным.
+*/
+/*
+ 	 var x1 = parseInt(prompt("введите значение х для вершины треугольника а"));
+ 	 var y1 = parseInt(prompt("введите значение y для вершины треугольника a"));
+ 	 var z1 = parseInt(prompt("введите значение z для вершины треугольника a"));
+ 	 var x2 = parseInt(prompt("введите значение x для вершины треугольника b"));
+ 	 var y2 = parseInt(prompt("введите значение y для вершины треугольника b"));
+ 	 var z2 = parseInt(prompt("введите значение z для вершины треугольника b"));
+ 	 var x3 = parseInt(prompt("введите значение x для вершины треугольника c"));
+ 	 var y3 = parseInt(prompt("введите значение y для вершины треугольника c"));
+ 	 var z3 = parseInt(prompt("введите значение z для вершины треугольника c"));
+ 	 var a,b,c;
+
+ 	 a = Math.sqrt((Math.pow((x2-x1),2))+(Math.pow((y2-y1),2))+(Math.pow((z2-z1),2)));
+ 	 b = Math.sqrt((Math.pow((x3-x2),2))+(Math.pow((y3-y2),2))+(Math.pow((z3-z2),2)));
+ 	 c = Math.sqrt((Math.pow((x1-x3),2))+(Math.pow((y1-y3),2))+(Math.pow((z1-z3),2)));
+
+ 	 if (a*a === b*b + c*c || b*b === a*a + c*c || c*c === a*a + b*b) {
+ 	 	alert('треугольник является прямоугольным')
+ 	 } else {
+ 	 	alert('треугольник не является прямоугольным')
+ 	 }
+*/
+
+// задача №2
+
+/*
+Дано целое число в диапазоне 
+0 - 9.
+Вывести строку - название соответствующей цифры 
+на русском языке 
+(0 - "ноль", 1 - "один", 2 - "два", ...).
+*/
+/*
+	var num = parseInt(prompt("Select a number from 0 to 9"))
+
+	switch (num) {
+		case 0:
+		alert('zero');
+		break;
+
+		case 1:
+		alert('one');
+		break;
+
+		case 2:
+		alert('two');
+		break;
+
+		case 3:
+		alert('three');
+		break;
+
+		case 4:
+		alert('four');
+		break;
+
+		case 5:
+		alert('five');
+		break;
+
+		case 6:
+		alert('six');
+		break;
+
+		case 7:
+		alert('seven');
+		break;
+
+		case 8:
+		alert('eight');
+		break;
+
+		case 9:
+		alert('nine');
+		break;
+
+		default: alert('nuffin')
+	}
+*/
+// задача №3
+
+/*
+Дано целое число в диапазоне 1 - 5. 
+Вывести 
+строку - словесное описание соответствующей 
+оценки 
+(1 - "плохо", 
+2 - "неудовлетворительно",
+3 - "удовлетворительно", 
+4 - "хорошо", 
+5 - "отлично")
+*/
+/*
+	var poll = parseInt(prompt("Rate our quality: \n1-Bad \n2-Unacceptable \n3-Acceptable \n4-Good \n5-Excellent"))
+
+	switch (poll) {
+		case 1:
+		alert('Bad');
+		break;
+
+		case 2:
+		alert('Unacceptable');
+		break;
+
+		case 3:
+		alert('Acceptable');
+		break;
+
+		case 4:
+		alert('Good');
+		break;
+
+		case 5:
+		alert('Excellent');
+		break;
+
+		default: alert('Error');
+	}
+*/
+// задача №4
+/*
+Вывести используя (document.write) таблицу умножения чисел до 10.
+*/
+/*
+var a=1, b, i=1, sum, table='<table style="background: #006080; text-align: center"><tr>';
+    while(i<=10){
+    table +='<td>'+ i++ +'</td>';
+    }
+    table += '</tr>';
+    while(a<=9){
+        a++;
+        table += '<tr style="background: #4dd2ff;">';
+        b=1;
+        while (b<=10){
+            sum=a*b;
+            table +='<td>'+ sum +'</td>';
+            b++;
+        }
+        table += '</tr>';
+    }
+    document.write(table);
+    table += '</table>';
+*/
+</script>
+</body>
+</html>
